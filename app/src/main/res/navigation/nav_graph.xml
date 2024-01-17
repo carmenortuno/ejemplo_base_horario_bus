@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/paradasbus_totales">
+
+    <fragment
+        android:id="@+id/paradasbus_totales"
+        android:name="com.example.ejemplo_base_horario_bus.Paradasbus_totales"
+        android:label="fragment_paradasbus_totales"
+        tools:layout="@layout/fragment_paradasbus_totales" >
+        <action
+            android:id="@+id/action_paradasbus_totales_to_parada_horario"
+            app:destination="@id/parada_horario" />
+    </fragment>
+    <fragment
+        android:id="@+id/parada_horario"
+        android:name="com.example.ejemplo_base_horario_bus.Parada_horario"
+        android:label="fragment_parada_horario"
+        tools:layout="@layout/fragment_parada_horario" />
+</navigation>
